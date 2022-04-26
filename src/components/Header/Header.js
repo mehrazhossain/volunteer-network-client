@@ -5,13 +5,7 @@ import logo from '../../images/logos/Group 1329.png';
 
 const Header = () => {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      bg="light"
-      variant="light"
-      className="fs-6"
-    >
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand href="#home">
           <img style={{ height: '60px' }} src={logo} alt="" />
@@ -31,14 +25,14 @@ const Header = () => {
               Blog
             </Nav.Link>
             <Nav.Link
-              className="bg-primary text-light rounded px-4 register"
+              className="bg-primary text-light px-4 register border-style"
               eventKey={2}
               href="#memes"
             >
               Register
             </Nav.Link>
             <Nav.Link
-              className="bg-dark text-light rounded px-4"
+              className="bg-dark text-light px-4 border-style"
               eventKey={2}
               href="#memes"
             >

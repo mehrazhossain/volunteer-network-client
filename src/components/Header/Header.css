@@ -2,3 +2,6 @@
   margin-left: 36px !important;
   margin-right: 12px !important;
 }
+.border-style {
+  border-radius: 8px;
+}
