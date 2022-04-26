@@ -5,7 +5,13 @@ import logo from '../../images/logos/Group 1329.png';
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="light"
+      variant="light"
+      className="fs-6"
+    >
       <Container>
         <Navbar.Brand href="#home">
           <img style={{ height: '60px' }} src={logo} alt="" />
