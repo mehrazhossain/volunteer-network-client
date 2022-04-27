@@ -1,43 +1,36 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../images/logos/Group 1329.png';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
           <img style={{ height: '60px' }} src={logo} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav>
-            <Nav.Link href="#deets">Home</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Donation
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Events
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Blog
-            </Nav.Link>
-            <Nav.Link
+          <Nav className="d-flex align-items-center justify-content-center">
+            <CustomLink to="/">Home</CustomLink>
+            <CustomLink to="/donation">Donation</CustomLink>
+            <CustomLink to="/events">Events</CustomLink>
+            <CustomLink to="/blog">Blog</CustomLink>
+            <Button
               className="bg-primary text-light px-4 register border-style"
               eventKey={2}
-              href="#memes"
             >
               Register
-            </Nav.Link>
-            <Nav.Link
+            </Button>
+            <Button
               className="bg-dark text-light px-4 border-style"
               eventKey={2}
-              href="#memes"
             >
               Admin
-            </Nav.Link>
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
