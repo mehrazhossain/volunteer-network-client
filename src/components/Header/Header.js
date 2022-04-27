@@ -19,16 +19,10 @@ const Header = () => {
             <CustomLink to="/donation">Donation</CustomLink>
             <CustomLink to="/events">Events</CustomLink>
             <CustomLink to="/blog">Blog</CustomLink>
-            <Button
-              className="bg-primary text-light px-4 register border-style"
-              eventKey={2}
-            >
+            <Button className="bg-primary text-light px-4 register border-style">
               Register
             </Button>
-            <Button
-              className="bg-dark text-light px-4 border-style"
-              eventKey={2}
-            >
+            <Button className="bg-dark text-light px-4 border-style">
               Admin
             </Button>
           </Nav>
