@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Login from './components/Login/Login';
 import AddNewService from './components/AddNewService/AddNewService';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route
           path="/addnewservice"
           element={<AddNewService></AddNewService>}
+        ></Route>
+        <Route
+          path="/service/:serviceId"
+          element={<ServiceDetail></ServiceDetail>}
         ></Route>
       </Routes>
       <Footer></Footer>

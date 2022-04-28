@@ -1,6 +1,19 @@
-.service-title {
+.service-div {
   background-color: #5333d3;
 }
+.service-title {
+  cursor: pointer;
+}
+.service-title:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .rounded {
   border-radius: 25px !important;
+}
+
+a {
+  text-decoration: none;
 }
